@@ -1,5 +1,5 @@
 import random
-import os
+#import os
 
 # Tiv@ zbaxacnuma mijinum 3.17  byte taracq
 
@@ -11,5 +11,5 @@ for line in range(0, 40000000):
 
 file.close()
 
-print(os.path.getsize("rawfile.txt"))
+#print(os.path.getsize("rawfile.txt"))
 
