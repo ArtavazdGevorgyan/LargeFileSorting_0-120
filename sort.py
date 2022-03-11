@@ -9,16 +9,12 @@ with open("rawfile.txt", "r") as file:
         lst = list(line.split(" "))
         for i in lst:
             dct[int(i)] += 1
-file.close()
 
-
-file = open('sortedfile.txt', 'w')
-for i in dct.keys():
-    for j in range(0, dct[i]):
-        
-        file.write(str(i) + " ")
+with open('sortedfile.txt', 'w') as file:
+    for i in dct.keys():
+        for j in range(0, dct[i]):
+            file.write(str(i) + " ")
 
 #print(os.path.getsize("sortedfile.txt"))
 
-# Close the file
 file.close()
