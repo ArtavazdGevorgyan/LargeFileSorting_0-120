@@ -16,5 +16,3 @@ with open('sortedfile.txt', 'w') as file:
             file.write(str(i) + " ")
 
 #print(os.path.getsize("sortedfile.txt"))
-
-file.close()
